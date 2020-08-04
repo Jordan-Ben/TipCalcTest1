@@ -1,0 +1,19 @@
+﻿<Window x:Class="TipCalcTest1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TipCalcTest1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="BackMat">
+        <Rectangle x:Name="BillTotalMat" HorizontalAlignment="Left" Height="34" Margin="62,68,0,0" Stroke="Black" VerticalAlignment="Top" Width="219" Fill="#FF2885D3"/>
+
+        <TextBlock x:Name="BillTotalInput" HorizontalAlignment="Left" Height="18" Margin="67,76,0,0" Text="Bill Total:" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" TextAlignment="Left"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="124,72,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.512,0.481" TextChanged="TextBox_TextChanged"/>
+        <Rectangle HorizontalAlignment="Left" Height="24" Margin="67,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="177"/>
+        <TextBlock HorizontalAlignment="Left" Height="68" Margin="349,68,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
+        <TextBox HorizontalAlignment="Left" Height="28" Margin="334,116,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+
+    </Grid>
+</Window>
