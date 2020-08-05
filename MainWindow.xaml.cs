@@ -25,9 +25,24 @@ namespace TipCalcTest1
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double billAmount;
+            double tipPercentage;
+            double tipAmount;
+            double total;
+
+            billAmount = Convert.ToDouble (BillTotalInput.Text);
+            tipPercentage = Convert.ToDouble(TipPercentageInput.Text);
+            tipAmount = (billAmount * tipPercentage) / 100;
+            total = tipAmount + billAmount;
+
+            ResultTextBox.Text = "You should leave " + tipAmount.ToString("C") + ". Your total will be " + total.ToString("C");
+      
         }
+
+        
     }
 }

@@ -5,15 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TipCalcTest1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="BackMat">
-        <Rectangle x:Name="BillTotalMat" HorizontalAlignment="Left" Height="34" Margin="62,68,0,0" Stroke="Black" VerticalAlignment="Top" Width="219" Fill="#FF2885D3"/>
+        Title="Tip Calculator By Jordan Benson" Height="248" Width="232">
+    <Grid x:Name="BackMat" Height="228" Margin="3,0,2,0" Background="#FFA5A6A8">
+        <Rectangle x:Name="BillTotalMat" HorizontalAlignment="Left" Height="34" Margin="8,11,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Fill="#FF6699F1"/>
 
-        <TextBlock x:Name="BillTotalInput" HorizontalAlignment="Left" Height="18" Margin="67,76,0,0" Text="Bill Total:" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" TextAlignment="Left"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="124,72,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.512,0.481" TextChanged="TextBox_TextChanged"/>
-        <Rectangle HorizontalAlignment="Left" Height="24" Margin="67,116,0,0" Stroke="Black" VerticalAlignment="Top" Width="177"/>
-        <TextBlock HorizontalAlignment="Left" Height="68" Margin="349,68,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="334,116,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+        <TextBlock x:Name="BillTotal" HorizontalAlignment="Left" Height="18" Margin="12,19,0,0" Text="Bill Total:" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" TextAlignment="Left"/>
+        <TextBox x:Name="BillTotalInput" HorizontalAlignment="Left" Height="26" Margin="98,15,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="83" />
+        <Rectangle x:Name="TipPercentageMat" HorizontalAlignment="Left" Height="38" Margin="8,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Fill="#FF6AC0F1"/>
+        <TextBlock x:Name="TipPercentage" HorizontalAlignment="Left" Height="18" Margin="12,60,0,0" Text="Tip Percentage" TextWrapping="Wrap" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="TipPercentageInput" HorizontalAlignment="Left" Height="24" Margin="98,57,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="83" />
+        <Button Content="Calculate" HorizontalAlignment="Left" Height="35" Margin="81,114,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" BorderBrush="#FF131212">
+            <Button.Background>
+                <SolidColorBrush Color="#FF8368E0" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="ResultTextBox" HorizontalAlignment="Center" Height="47" Margin="0,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" RenderTransformOrigin="0.5,0.5" Background="#FFB2DEBA">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.215"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
 
     </Grid>
 </Window>
