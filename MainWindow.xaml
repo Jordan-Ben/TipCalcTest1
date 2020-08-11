@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TipCalcTest1"
         mc:Ignorable="d"
-        Title="Tip Calculator By Jordan Benson" Height="248" Width="232">
+        Title="Tip Calculator By Jordan Benson" Height="248" Width="397">
     <Grid x:Name="BackMat" Height="228" Margin="3,0,2,0" Background="#FFA5A6A8">
         <Rectangle x:Name="BillTotalMat" HorizontalAlignment="Left" Height="34" Margin="8,11,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Fill="#FF6699F1"/>
 

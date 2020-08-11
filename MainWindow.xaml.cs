@@ -17,6 +17,7 @@ namespace TipCalcTest1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// issue with try cagtch stuff
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -34,13 +35,29 @@ namespace TipCalcTest1
             double tipAmount;
             double total;
 
-            billAmount = Convert.ToDouble (BillTotalInput.Text);
-            tipPercentage = Convert.ToDouble(TipPercentageInput.Text);
-            tipAmount = (billAmount * tipPercentage) / 100;
-            total = tipAmount + billAmount;
+            try
+            {
 
-            ResultTextBox.Text = "You should leave " + tipAmount.ToString("C") + ". Your total will be " + total.ToString("C");
+                billAmount = Convert.ToDouble(BillTotalInput.Text);
+                tipPercentage = Convert.ToDouble(TipPercentageInput.Text);
+                
+                tipAmount = (billAmount * tipPercentage) / 100;
+                total = tipAmount + billAmount;
+                ResultTextBox.Text = "You should leave " + tipAmount.ToString("C") + ". Your total will be " + total.ToString("C");
       
+            }
+
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("please enter a valid number");
+            }
+            catch
+            {
+
+
+            }
+ 
+           
         }
 
         
